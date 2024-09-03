@@ -1,12 +1,16 @@
 # The Art and Science of Transportation Research in the AI Era
 
+:mortar_board: 6-CP seminar (Winter Semester 2024/25)\
+:clock1330: Wednesdays 11:40-15:00\
+:school: L402/231
+
 ## Course description
 
 In today’s rapidly evolving AI-mediated world, the way of conducting scientific research is undergoing significant transformation. The ability to understand fundamental concepts in research design and methodology, while harnessing emerging computational techniques and tools, is crucial for addressing contemporary challenges and advancing knowledge across various fields. This seminar "The Art and Science of Transportation Research in the AI Era" (ASTRAI) responds to the need to prepare you to thrive in a rapidly evolving, technology-driven world by integrating computational and data science techniques into your studies. While the examples primarily focus on transportation, the techniques and methods are transferable to disciplines.
 
 This seminar covers the key concepts in research design and methodology, such as operational definitions, measurements, and generalizability, and exposes you to a variety of computational research methods and techniques, such as web scraping, data wrangling in Python and R, SQL, Power BI, Tableau, and version control with git.
 
-The goal of this seminar is not to create programmers, computer scientists, or computational engineers, but rather to familiarize and de-mystify computational methods and data science techniques by striking a balance between the “how to” and the “why.” So, in essence, this course aims to empower you to understand and apply these methods and techniques effectively within your respective fields of study. By the end of the course, you will:
+The goal of this seminar is not to create programmers, computer scientists, or computational engineers, but rather to familiarize and de-mystify computational methods and data science techniques by striking a balance between the "how to" and the "why." So, in essence, this course aims to empower you to understand and apply these methods and techniques effectively within your respective fields of study. By the end of the course, you will:
 
 *	Understand the fundamental concepts in research design and methodology.
 *	Effectively formulate research questions and design a study.
