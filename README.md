@@ -42,15 +42,15 @@ They can be anything (within the scope of this course) that you find interesting
 
 ## Q&A
 
-1. How to pronounce ASTRAI?
+**How to pronounce ASTRAI?**
 
 A stray (meaning wandering around in AI) or ashtray (meaning we have smoking hot topics). You pick.
 
-2. Who is this course for?
+**Who is this course for?**
 
 There are people who love coding to the moon and back. And there are people who hate coding to death. This course is for the people in the middle, those who appreciate the value of computational methods and are willing to explore but may feel unsure about where to start.
 
-3. With so many free resources available online, what is the value of this course?
+**With so many free resources available online, what is the value of this course?**
 
 *	The organization of content
 *	The filtering of information
