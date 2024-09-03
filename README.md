@@ -1,7 +1,7 @@
 # The Art and Science of Transportation Research in the AI Era
 
 :mortar_board: 6-CP seminar (Winter Semester 2024/25)\
-:clock1330: Wednesdays 11:40-15:00\
+:clock1130: Wednesdays 11:40-15:00\
 :school: L402/231
 
 ## Course description
