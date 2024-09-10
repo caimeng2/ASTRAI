@@ -66,6 +66,7 @@ The following criteria are used for the evaluation of your research proposal.
 
 **Writing (20 points, 20%)**
 | Evaluation | Description |
+|---|---|
 | Very Good (18–20 points)  | Writing is clear, concise, and well-organized with a logical flow. Minimal errors in grammar, punctuation, or spelling. |
 | Good (15–17 points)       | Writing is mostly clear and organized, with few errors. The argument generally flows well, though some transitions may be weak. |
 | Satisfactory (12–14 points) | Writing is understandable but contains several errors. Structure is logical but may lack coherence in places. |
