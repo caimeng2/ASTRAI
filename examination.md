@@ -75,16 +75,16 @@ The following criteria are used for the evaluation of your research proposal.
 
 The total points are converted to grades according to the table below.
 
-| Points | Grade | Percentage | Meaning       | Pass or Fail |
-|--------|-------|------------|---------------|--------------|
-| 95–100 | 1.0   | 95 - 100%  | Very good     | Pass         |
-| 90–94  | 1.3   | 90 - 94%   | Very good     | Pass         |
-| 85–89  | 1.7   | 85 - 89%   | Good          | Pass         |
-| 80–84  | 2.0   | 80 - 84%   | Good          | Pass         |
-| 75–79  | 2.3   | 75 - 79%   | Good          | Pass         |
-| 70–74  | 2.7   | 70 - 74%   | Satisfactory  | Pass         |
-| 65–69  | 3.0   | 65 - 69%   | Satisfactory  | Pass         |
-| 60–64  | 3.3   | 60 - 64%   | Satisfactory  | Pass         |
-| 55–59  | 3.7   | 55 - 59%   | Sufficient    | Pass         |
-| 50–54  | 4.0   | 50 - 54%   | Sufficient    | Pass         |
-| 0–49   | 5.0   | 0 - 49%    | Failed        | Fail         |
+| Points | Percentage | Grade |
+|--------|------------|-------|
+| 95–100 | 95 - 100%  | 1.0   |
+| 90–94  | 90 - 94%   | 1.3   |
+| 85–89  | 85 - 89%   | 1.7   |
+| 80–84  | 80 - 84%   | 2.0   |
+| 75–79  | 75 - 79%   | 2.3   |
+| 70–74  | 70 - 74%   | 2.7   |
+| 65–69  | 65 - 69%   | 3.0   |
+| 60–64  | 60 - 64%   | 3.3   |
+| 55–59  | 55 - 59%   | 3.7   |
+| 50–54  | 50 - 54%   | 4.0   |
+| 0–49   | 0 - 49%    | 5.0   |
