@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="img_DALLE.jpeg" width="400"/>
+  <img src="logo_DALLE.jpeg" width="300"/>
 </p>
 
 # The Art and Science of Transportation Research in the AI Era
