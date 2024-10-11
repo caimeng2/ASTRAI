@@ -28,21 +28,21 @@ This class has no required textbook. We will direct you toward online resources 
 
 **Class participation**: Active class participation (led both by the instructors and by students) is critical to the success of this course. As such, you are expected to attend class every week, bring your laptop and its power cord, and actively participate in the in-class activities.
 
-**Pre-class requirement**: From time to time, you will need to install essential software before class so that we can focus on implementation and experimentation in class.
+**Pre-class requirement**: From time to time, you will need to sign up for accounts or install essential software before class so that we can focus on implementation and experimentation in class.
 
-**In-class activities**: Each session will be broken up into presentations and group activities (e.g., discussion, programming, debugging) that allow you to immediately implement and get feedback on what you have just learned.
+**In-class activities**: Practicing coding, debugging, etc. This allows you to immediately implement and get feedback on what you have just learned.
 
-**Student-led learning**: This seminar is student-centered, which means you are expected to choose a computational tool or a technique you find interesting or relevant to your research proposal (see below for possible topics), study it in-depth, and explain it to your peers in class. This approach allows you to take ownership of your learning while fostering a collaborative learning environment. Good performance in this presentation can improve your final grade by up to 0.4 points.
+**Student-led (YOU-lead) learning**: This seminar is student-centered, which means you are expected to choose a computational tool or a technique you find interesting or relevant to your research proposal (see below for possible topics), study it in-depth, and explain it to your peers in class. This approach allows you to take ownership of your learning while fostering a collaborative learning environment. Good performance in this presentation can improve your final grade by up to 0.4 points.
 
 **Final examination**: You are required to develop a one-page (excluding references) research proposal on a topic of your interest, incorporating computational methods. The proposal should include the current state of the research topic, the research questions, the methodology (including data sources), and the limitations of the chosen methods.
 
-## Possible topics for student-led learning
+## Possible topics for YOU-lead sessions
 
 They can be anything (within the scope of this course) that you find interesting or useful. They can be a use case of what you have learned from the class or a new tool related to what you have learned. The following are some examples.
 
-**Use cases**: scraping traffic data, creating a dashboard using PowerBI, demonstrating how to use GitHub for teamwork.
+**Use cases**: scraping traffic data, creating a dashboard using PowerBI, demonstrating how to use GitHub for teamwork, analyzing survey data with R.
 
-**Methods**: agent-based modeling, network analysis, traffic simulation, spatial analysis, regular expressions.
+**Methods**: machine learning, agent-based modeling, network analysis, traffic simulation, spatial analysis, regular expressions.
 
 **Packages**: pandas, NumPy, scikit-learn, TensorFlow, PyTorch, matplotlib, seaborn, plotly, folium, shapely, geopandas.
 
