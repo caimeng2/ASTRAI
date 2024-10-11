@@ -26,7 +26,7 @@ This class has no required textbook. We will direct you toward online resources 
 
 ## Course activities
 
-**Class participation**: Active class participation (led both by the instructors and by students) is critical to the success of this course. As such, you are expected to attend class every week, bring your laptop and its power cord, and actively participate in the in-class activities.
+**Class participation**: Active class participation is critical to the success of this course. As such, you are expected to attend class every week, bring your laptop and its power cord, and actively participate in the in-class activities.
 
 **Pre-class requirement**: From time to time, you will need to sign up for accounts or install essential software before class so that we can focus on implementation and experimentation in class.
 
@@ -47,6 +47,20 @@ They can be anything (within the scope of this course) that you find interesting
 **Packages**: pandas, NumPy, scikit-learn, TensorFlow, PyTorch, matplotlib, seaborn, plotly, folium, shapely, geopandas.
 
 **Tools**: VS Code, Google Colab, JupyterHub.
+
+## Tentative schedule
+
+Week 1 (16 Oct 2024): Welcome to ASTRAI
+
+Week 2 (23 Oct 2024): Python basics
+
+Week 3 (30 Oct 2024): Web scraping
+
+Week 4 (6 Nov 2024): Data wrangling
+
+Week 5 (13 Nov 2024): Open-source tools, **signing up for YOU-lead**
+
+Week 6 (20 Nov 2024):
 
 ## Q&A
 
