@@ -50,17 +50,23 @@ They can be anything (within the scope of this course) that you find interesting
 
 ## Tentative schedule
 
-Week 1 (16 Oct 2024): Welcome to ASTRAI
+The schedule and topics may change based on class progress and interests.
 
-Week 2 (23 Oct 2024): Python basics
+Week 1 (Oct 16, 2024): Welcome to ASTRAI
 
-Week 3 (30 Oct 2024): Web scraping
+Week 2 (Oct 23, 2024): Python basics
 
-Week 4 (6 Nov 2024): Data wrangling
+Week 3 (Oct 30, 2024): Web scraping
 
-Week 5 (13 Nov 2024): Open-source tools, **signing up for YOU-lead**
+Week 4 (Nov 6, 2024): Data wrangling
 
-Week 6 (20 Nov 2024):
+Week 5 (Nov 13, 2024): Open-source tools, **signing up for YOU-lead**
+
+Week 6 (Nov 20, 2024): Relational database
+
+Week 7 (Nov 27, 2024): Relational database
+
+From week 8: TBD based on YOU-lead
 
 ## Q&A
 
