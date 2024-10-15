@@ -62,11 +62,9 @@ Week 4 (Nov 6, 2024): Data wrangling
 
 Week 5 (Nov 13, 2024): Open-source tools, **signing up for YOU-lead**
 
-Week 6 (Nov 20, 2024): Relational database
+Week 6 (Nov 20, 2024): Research design and methodology
 
-Week 7 (Nov 27, 2024): Relational database
-
-From week 8: TBD based on YOU-lead
+From week 7: Mixed with YOU-lead
 
 ## Q&A
 
