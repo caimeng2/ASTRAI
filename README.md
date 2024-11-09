@@ -48,11 +48,13 @@ They can be anything (within the scope of this course) that you find interesting
 
 **Tools**: VS Code, Google Colab, JupyterHub.
 
+**Sign up for YOU-lead [here](https://docs.google.com/spreadsheets/d/1esQtwJurQ6PXKDdeY0r3jsSK4SU1G4MgjCqUpfYVKSY/edit?gid=0#gid=0)** by Nov 14.
+
 ## Tentative schedule
 
 The schedule and topics may change based on class progress and interests.
 
-Week 1 (Oct 16, 2024): Welcome to ASTRAI
+Week 1 (Oct 16, 2024): Welcome to ASTRAI, git
 
 Week 2 (Oct 23, 2024): Python basics
 
