@@ -56,3 +56,5 @@ case_id.txt
 # slides
 *.pptx
 
+# word doc
+*.docx
