@@ -50,7 +50,7 @@ They can be anything (within the scope of this course) that you find interesting
 
 **Sign up for YOU-lead [here](https://docs.google.com/spreadsheets/d/1esQtwJurQ6PXKDdeY0r3jsSK4SU1G4MgjCqUpfYVKSY/edit?gid=0#gid=0)** by Nov 14.
 
-## Tentative schedule
+## Schedule
 
 The schedule and topics may change based on class progress and interests.
 
