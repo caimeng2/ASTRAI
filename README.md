@@ -54,7 +54,7 @@ They can be anything (within the scope of this course) that you find interesting
 
 The schedule and topics may change based on class progress and interests.
 
-Week 1 (Oct 16, 2024): Welcome to ASTRAI, git
+Week 1 (Oct 16, 2024): Welcome to ASTRAI, `git`
 
 Week 2 (Oct 23, 2024): Python basics
 
@@ -66,7 +66,23 @@ Week 5 (Nov 13, 2024): Open-source tools, **signing up for YOU-lead**
 
 Week 6 (Nov 20, 2024): Research design and methodology
 
-From week 7: Mixed with YOU-lead
+Week 7 (Nov 27, 2024): R basics (Ezra), `ggplot` (William)
+
+Week 8 (Dec 4, 2024): `pandas`, `matplotlib` (Merlin), `geopandas`, `folium` (Johannes)
+
+Week 9 (Dec 11, 2024): Relational database basics
+
+Week 10 (Dec 18, 2024): Relational database advanced
+
+Week 11 (Jan 15, 2025): Digital twins (Pardis)
+
+Week 12 (Jan 22, 2025): Spatial analysis (Theresa), `plotly` (Ali)
+
+Week 13 (Jan 29, 2025): Pearson correlation (Nicole), PTV Visum (Thorben)
+
+Week 14 (Feb 5, 2025): PowerBI
+
+Week 15 (Feb 12, 2025): Working on your proposal
 
 ## Q&A
 
