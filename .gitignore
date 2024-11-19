@@ -58,3 +58,6 @@ case_id.txt
 
 # word doc
 *.docx
+
+# R
+.DS_Store
