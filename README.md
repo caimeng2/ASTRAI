@@ -78,9 +78,9 @@ Week 11 (Jan 15, 2025): Digital twins (Pardis)
 
 Week 12 (Jan 22, 2025): Spatial analysis (Theresa), `plotly` (Ali)
 
-Week 13 (Jan 29, 2025): Pearson correlation (Nicole), PTV Visum (Thorben)
+Week 13 (Jan 29, 2025): PowerBI
 
-Week 14 (Feb 5, 2025): PowerBI
+Week 14 (Feb 5, 2025): Pearson correlation (Nicole), PTV Visum (Thorben)
 
 Week 15 (Feb 12, 2025): Working on your proposal
 
