@@ -1,0 +1,4 @@
+1. ensure main branch is forked and up to date
+2. drag and drop new files
+3. add purpose message
+4. send pull request
