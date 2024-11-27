@@ -1,8 +1,11 @@
 install.packages("ggplot2") # data visualization
 install.packages("tidyverse") # data visualization
+install.packages("readxl")
 
 library("ggplot2") 
-d <-read_excel("C:/Users/willi/OneDrive/Escritorio/TU Darmstadt/WiSe 24-25/2. E.R in the AI era/You lead/Dogs_Example.xlsx")
+library("readxl")
+d <-read_excel("Dogs_Example.xlsx")
+Dogs_Example <-read_excel("Dogs_Example.xlsx")
 
 ggplot(data=Dogs_Example)+
   geom_point(mapping=aes(x=leg_length_mm, y=body_mass_g))
