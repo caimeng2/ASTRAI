@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_dba191126fa893d157fb7a5029178b68 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+<div style="position: fixed; bottom: 50px; right: 50px; width: 300px; height: 200px; background-color: white; border:2px solid grey; z-index:9999; font-size:14px; padding:10px;">
+    <h4>Punktzahl Legende</h4>
+    <ul style="list-style-type:none; padding:0; margin:0;">
+        <li><span style="display:inline-block; width:20px; height:20px; background-color:green; margin-right:10px;"></span>10 Punkte</li>
+        <li><span style="display:inline-block; width:20px; height:20px; background-color:yellow; margin-right:10px;"></span>5 Punkte</li>
+        <li><span style="display:inline-block; width:20px; height:20px; background-color:orange; margin-right:10px;"></span>-5 Punkte</li>
+        <li><span style="display:inline-block; width:20px; height:20px; background-color:red; margin-right:10px;"></span>-10 Punkte</li>
+    </ul>
+</div>
+    
+        <div style="position: fixed; bottom: 120px; left: 50px; width: 250px; height: 200px; background-color: white; border:2px solid grey; z-index:9999; font-size:14px;">
+            <h4>Rangliste</h4>
+        <p>1. Player1: 25 Punkte</p></div>
+    
+            <div class="folium-map" id="map_dba191126fa893d157fb7a5029178b68" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_dba191126fa893d157fb7a5029178b68 = L.map(
+                "map_dba191126fa893d157fb7a5029178b68",
+                {
+                    center: [50.1109, 8.6821],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 3,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_8c9e6a219897200556e36661cec4d95b = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_dba191126fa893d157fb7a5029178b68);
+        
+    
+            var marker_cluster_e5d607d51c399d7b3533bd88e9ec14ad = L.markerClusterGroup(
+                {}
+            );
+            map_dba191126fa893d157fb7a5029178b68.addLayer(marker_cluster_e5d607d51c399d7b3533bd88e9ec14ad);
+        
+    
+            var circle_marker_6b792ee53bdf7060dfc6c9b641976716 = L.circleMarker(
+                [52.52, 13.405],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e5d607d51c399d7b3533bd88e9ec14ad);
+        
+    
+        var popup_2a26351e91fbedd4e7567e62876cae37 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_4f686f593394f8a65cd41d704cb1b83a = $(`<div id="html_4f686f593394f8a65cd41d704cb1b83a" style="width: 100.0%; height: 100.0%;">     <div>         <strong>Ort:</strong> Berlin<br>         <strong>pm25:</strong> 15 µg/m³<br>         <button onclick="alert('Du hast 5 Punkte erhalten. Gesamtpunktzahl: 5')">Wähle diesen Ort</button>     </div>     </div>`)[0];
+                popup_2a26351e91fbedd4e7567e62876cae37.setContent(html_4f686f593394f8a65cd41d704cb1b83a);
+            
+        
+
+        circle_marker_6b792ee53bdf7060dfc6c9b641976716.bindPopup(popup_2a26351e91fbedd4e7567e62876cae37)
+        ;
+
+        
+    
+    
+            var circle_marker_b7e450cc9f704c9bed017ab1925c80d2 = L.circleMarker(
+                [53.5511, 9.9937],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e5d607d51c399d7b3533bd88e9ec14ad);
+        
+    
+        var popup_d9ee19fab1872b6ace49761bfe73af05 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_c959a017ba5e425e363a236668d2c919 = $(`<div id="html_c959a017ba5e425e363a236668d2c919" style="width: 100.0%; height: 100.0%;">     <div>         <strong>Ort:</strong> Hamburg<br>         <strong>pm10:</strong> 22 µg/m³<br>         <button onclick="alert('Du hast 5 Punkte erhalten. Gesamtpunktzahl: 10')">Wähle diesen Ort</button>     </div>     </div>`)[0];
+                popup_d9ee19fab1872b6ace49761bfe73af05.setContent(html_c959a017ba5e425e363a236668d2c919);
+            
+        
+
+        circle_marker_b7e450cc9f704c9bed017ab1925c80d2.bindPopup(popup_d9ee19fab1872b6ace49761bfe73af05)
+        ;
+
+        
+    
+    
+            var circle_marker_172fe0fe5ad5d0b539616cf33c0a9473 = L.circleMarker(
+                [48.1351, 11.582],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e5d607d51c399d7b3533bd88e9ec14ad);
+        
+    
+        var popup_eeec221a235231481509a3eb8d91d113 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_041643a5552101a97cb8d4a7ae19644e = $(`<div id="html_041643a5552101a97cb8d4a7ae19644e" style="width: 100.0%; height: 100.0%;">     <div>         <strong>Ort:</strong> München<br>         <strong>pm25:</strong> 30 µg/m³<br>         <button onclick="alert('Du hast -5 Punkte erhalten. Gesamtpunktzahl: 5')">Wähle diesen Ort</button>     </div>     </div>`)[0];
+                popup_eeec221a235231481509a3eb8d91d113.setContent(html_041643a5552101a97cb8d4a7ae19644e);
+            
+        
+
+        circle_marker_172fe0fe5ad5d0b539616cf33c0a9473.bindPopup(popup_eeec221a235231481509a3eb8d91d113)
+        ;
+
+        
+    
+    
+            var circle_marker_f0437be37a743e338c3309b32aafe212 = L.circleMarker(
+                [50.9375, 6.9603],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e5d607d51c399d7b3533bd88e9ec14ad);
+        
+    
+        var popup_7a4f8c54284bffbe9c092f4ba0c55dc9 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_b261fd6fb78a6333d21e0f71f5edb3b7 = $(`<div id="html_b261fd6fb78a6333d21e0f71f5edb3b7" style="width: 100.0%; height: 100.0%;">     <div>         <strong>Ort:</strong> Köln<br>         <strong>pm10:</strong> 18 µg/m³<br>         <button onclick="alert('Du hast 10 Punkte erhalten. Gesamtpunktzahl: 15')">Wähle diesen Ort</button>     </div>     </div>`)[0];
+                popup_7a4f8c54284bffbe9c092f4ba0c55dc9.setContent(html_b261fd6fb78a6333d21e0f71f5edb3b7);
+            
+        
+
+        circle_marker_f0437be37a743e338c3309b32aafe212.bindPopup(popup_7a4f8c54284bffbe9c092f4ba0c55dc9)
+        ;
+
+        
+    
+    
+            var circle_marker_f5d0a6a5930c76c0d973f9ca2fdc93f7 = L.circleMarker(
+                [50.1109, 8.6821],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e5d607d51c399d7b3533bd88e9ec14ad);
+        
+    
+        var popup_f536c63929b124223fa8cb8d908bcf5a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_3f1be4de4ecbfad83e48a8fea1e76a9e = $(`<div id="html_3f1be4de4ecbfad83e48a8fea1e76a9e" style="width: 100.0%; height: 100.0%;">     <div>         <strong>Ort:</strong> Frankfurt<br>         <strong>pm25:</strong> 3.5 µg/m³<br>         <button onclick="alert('Du hast 10 Punkte erhalten. Gesamtpunktzahl: 25')">Wähle diesen Ort</button>     </div>     </div>`)[0];
+                popup_f536c63929b124223fa8cb8d908bcf5a.setContent(html_3f1be4de4ecbfad83e48a8fea1e76a9e);
+            
+        
+
+        circle_marker_f5d0a6a5930c76c0d973f9ca2fdc93f7.bindPopup(popup_f536c63929b124223fa8cb8d908bcf5a)
+        ;
+
+        
+    
+    
+            var circle_marker_ea14b9e3fab941ef9b09932402c3c1ec = L.circleMarker(
+                [48.8566, 2.3522],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e5d607d51c399d7b3533bd88e9ec14ad);
+        
+    
+        var popup_5bb9990f95b72de44dd12c00aa7fd86e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_00ed7aa6a084459f05aa8c55918845e2 = $(`<div id="html_00ed7aa6a084459f05aa8c55918845e2" style="width: 100.0%; height: 100.0%;">     <div>         <strong>Ort:</strong> Paris<br>         <strong>pm25:</strong> 12 µg/m³<br>         <button onclick="alert('Du hast die maximale Anzahl an Versuchen erreicht!')">Wähle diesen Ort</button>     </div>     </div>`)[0];
+                popup_5bb9990f95b72de44dd12c00aa7fd86e.setContent(html_00ed7aa6a084459f05aa8c55918845e2);
+            
+        
+
+        circle_marker_ea14b9e3fab941ef9b09932402c3c1ec.bindPopup(popup_5bb9990f95b72de44dd12c00aa7fd86e)
+        ;
+
+        
+    
+    
+            var circle_marker_38979e3e78fc03fffdef044b9b20d37d = L.circleMarker(
+                [51.5074, -0.1278],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e5d607d51c399d7b3533bd88e9ec14ad);
+        
+    
+        var popup_7648f3a8fd3198e6a07603d07484f708 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a9b61ef9bd9751d07c8f9a2c0394abb1 = $(`<div id="html_a9b61ef9bd9751d07c8f9a2c0394abb1" style="width: 100.0%; height: 100.0%;">     <div>         <strong>Ort:</strong> London<br>         <strong>pm10:</strong> 35 µg/m³<br>         <button onclick="alert('Du hast die maximale Anzahl an Versuchen erreicht!')">Wähle diesen Ort</button>     </div>     </div>`)[0];
+                popup_7648f3a8fd3198e6a07603d07484f708.setContent(html_a9b61ef9bd9751d07c8f9a2c0394abb1);
+            
+        
+
+        circle_marker_38979e3e78fc03fffdef044b9b20d37d.bindPopup(popup_7648f3a8fd3198e6a07603d07484f708)
+        ;
+
+        
+    
+    
+            var circle_marker_b47f0627c67965f5421503b232cca7b7 = L.circleMarker(
+                [40.7128, -74.006],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e5d607d51c399d7b3533bd88e9ec14ad);
+        
+    
+        var popup_ce322407e9df00b4bf46a4279624716e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_64c9d2e49728523939062912115e0e5b = $(`<div id="html_64c9d2e49728523939062912115e0e5b" style="width: 100.0%; height: 100.0%;">     <div>         <strong>Ort:</strong> New York<br>         <strong>pm25:</strong> 45 µg/m³<br>         <button onclick="alert('Du hast die maximale Anzahl an Versuchen erreicht!')">Wähle diesen Ort</button>     </div>     </div>`)[0];
+                popup_ce322407e9df00b4bf46a4279624716e.setContent(html_64c9d2e49728523939062912115e0e5b);
+            
+        
+
+        circle_marker_b47f0627c67965f5421503b232cca7b7.bindPopup(popup_ce322407e9df00b4bf46a4279624716e)
+        ;
+
+        
+    
+    
+            var circle_marker_9e1b9e5fe6ae9f13182d8b4a1fa0283c = L.circleMarker(
+                [35.6895, 139.6917],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e5d607d51c399d7b3533bd88e9ec14ad);
+        
+    
+        var popup_724f38681b76d12566bf2a568bb72530 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f26a3d3f30ee3489a20b4b2c0c73c1d1 = $(`<div id="html_f26a3d3f30ee3489a20b4b2c0c73c1d1" style="width: 100.0%; height: 100.0%;">     <div>         <strong>Ort:</strong> Tokyo<br>         <strong>pm10:</strong> 50 µg/m³<br>         <button onclick="alert('Du hast die maximale Anzahl an Versuchen erreicht!')">Wähle diesen Ort</button>     </div>     </div>`)[0];
+                popup_724f38681b76d12566bf2a568bb72530.setContent(html_f26a3d3f30ee3489a20b4b2c0c73c1d1);
+            
+        
+
+        circle_marker_9e1b9e5fe6ae9f13182d8b4a1fa0283c.bindPopup(popup_724f38681b76d12566bf2a568bb72530)
+        ;
+
+        
+    
+    
+            var circle_marker_7c720e712f5b1311f95da90d701b1719 = L.circleMarker(
+                [-33.8688, 151.2093],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e5d607d51c399d7b3533bd88e9ec14ad);
+        
+    
+        var popup_d17e9597a25ce33f9a7563511412c7ff = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a45fda10346bce9cdae5e9f6c3251116 = $(`<div id="html_a45fda10346bce9cdae5e9f6c3251116" style="width: 100.0%; height: 100.0%;">     <div>         <strong>Ort:</strong> Sydney<br>         <strong>pm25:</strong> 7 µg/m³<br>         <button onclick="alert('Du hast die maximale Anzahl an Versuchen erreicht!')">Wähle diesen Ort</button>     </div>     </div>`)[0];
+                popup_d17e9597a25ce33f9a7563511412c7ff.setContent(html_a45fda10346bce9cdae5e9f6c3251116);
+            
+        
+
+        circle_marker_7c720e712f5b1311f95da90d701b1719.bindPopup(popup_d17e9597a25ce33f9a7563511412c7ff)
+        ;
+
+        
+    
+</script>
+</html>

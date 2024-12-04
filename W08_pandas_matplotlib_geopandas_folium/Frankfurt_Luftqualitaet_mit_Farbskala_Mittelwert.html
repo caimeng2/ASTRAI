@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_6c6eab5976549a7b78ee6dae6b18438d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+<div style="position: fixed; 
+            bottom: 350px; left: 50px; width: 200px; height: 175px; 
+            background-color: white; border:2px solid grey; z-index:9999; font-size:14px;
+            ">
+    <h4 style="margin:10px">PM Werte (µg/m³)</h4>
+    <div style="background-color:green; height:15px; width:30px; display:inline-block; margin:5px"></div><span> Gering</span><br>
+    <div style="background-color:yellow; height:15px; width:30px; display:inline-block; margin:5px"></div><span> Mäßig</span><br>
+    <div style="background-color:orange; height:15px; width:30px; display:inline-block; margin:5px"></div><span> Hoch</span><br>
+    <div style="background-color:red; height:15px; width:30px; display:inline-block; margin:5px"></div><span> Sehr hoch</span>
+</div>
+    
+            <div class="folium-map" id="map_6c6eab5976549a7b78ee6dae6b18438d" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_6c6eab5976549a7b78ee6dae6b18438d = L.map(
+                "map_6c6eab5976549a7b78ee6dae6b18438d",
+                {
+                    center: [50.1109, 8.6821],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_50c40a06f8474cc44b516ebee45e8469 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_6c6eab5976549a7b78ee6dae6b18438d);
+        
+    
+            var circle_marker_a9e41fe0ff2e1051c7dfb1d4a2c9dca6 = L.circleMarker(
+                [50.12458899971443, 8.691910999636601],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_6c6eab5976549a7b78ee6dae6b18438d);
+        
+    
+        var popup_c9dd50e999f921a9a30180e22cdbec08 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9922b3a3d205517ad8aa4b1451886042 = $(`<div id="html_9922b3a3d205517ad8aa4b1451886042" style="width: 100.0%; height: 100.0%;">Ort: Frankfurt Friedberger Landstraße<br>pm10: 10.58 µg/m³<br></div>`)[0];
+                popup_c9dd50e999f921a9a30180e22cdbec08.setContent(html_9922b3a3d205517ad8aa4b1451886042);
+            
+        
+
+        circle_marker_a9e41fe0ff2e1051c7dfb1d4a2c9dca6.bindPopup(popup_c9dd50e999f921a9a30180e22cdbec08)
+        ;
+
+        
+    
+    
+            var circle_marker_388c12d6f3a3edb178b733f24a44b764 = L.circleMarker(
+                [50.12458899971443, 8.691910999636601],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_6c6eab5976549a7b78ee6dae6b18438d);
+        
+    
+        var popup_b9fd066c3a2af63083130460bdb04123 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cbe3798e26226d9468c21d9cb2c52334 = $(`<div id="html_cbe3798e26226d9468c21d9cb2c52334" style="width: 100.0%; height: 100.0%;">Ort: Frankfurt Friedberger Landstraße<br>pm25: 6.04 µg/m³<br></div>`)[0];
+                popup_b9fd066c3a2af63083130460bdb04123.setContent(html_cbe3798e26226d9468c21d9cb2c52334);
+            
+        
+
+        circle_marker_388c12d6f3a3edb178b733f24a44b764.bindPopup(popup_b9fd066c3a2af63083130460bdb04123)
+        ;
+
+        
+    
+    
+            var circle_marker_a7ace20885276351a6aad7c19a53522c = L.circleMarker(
+                [50.12533200006693, 8.746343000329567],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_6c6eab5976549a7b78ee6dae6b18438d);
+        
+    
+        var popup_0ed1954c85435a4c76d8d8905a65d63f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b631bde74b7ebbb1c62a2007fd54b239 = $(`<div id="html_b631bde74b7ebbb1c62a2007fd54b239" style="width: 100.0%; height: 100.0%;">Ort: Frankfurt Ost<br>pm10: 8.29 µg/m³<br></div>`)[0];
+                popup_0ed1954c85435a4c76d8d8905a65d63f.setContent(html_b631bde74b7ebbb1c62a2007fd54b239);
+            
+        
+
+        circle_marker_a7ace20885276351a6aad7c19a53522c.bindPopup(popup_0ed1954c85435a4c76d8d8905a65d63f)
+        ;
+
+        
+    
+    
+            var circle_marker_8d412045565e62ba7234da119e0470df = L.circleMarker(
+                [50.12533200006693, 8.746343000329567],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_6c6eab5976549a7b78ee6dae6b18438d);
+        
+    
+        var popup_55be53b30663abb9e99ae2e79a6a555e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1951c1ce43ef45f2480a849c9851706a = $(`<div id="html_1951c1ce43ef45f2480a849c9851706a" style="width: 100.0%; height: 100.0%;">Ort: Frankfurt Ost<br>pm25: 4.90 µg/m³<br></div>`)[0];
+                popup_55be53b30663abb9e99ae2e79a6a555e.setContent(html_1951c1ce43ef45f2480a849c9851706a);
+            
+        
+
+        circle_marker_8d412045565e62ba7234da119e0470df.bindPopup(popup_55be53b30663abb9e99ae2e79a6a555e)
+        ;
+
+        
+    
+    
+            var circle_marker_2bd07b0cd8ffad05152bc73ffab33b4c = L.circleMarker(
+                [50.10174999977533, 8.542516999704608],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_6c6eab5976549a7b78ee6dae6b18438d);
+        
+    
+        var popup_635559427f45fc3596fd04a0e8b6da7c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6113f22499f748fc53ab88c69a71d094 = $(`<div id="html_6113f22499f748fc53ab88c69a71d094" style="width: 100.0%; height: 100.0%;">Ort: Frankfurt-Höchst<br>pm10: 8.36 µg/m³<br></div>`)[0];
+                popup_635559427f45fc3596fd04a0e8b6da7c.setContent(html_6113f22499f748fc53ab88c69a71d094);
+            
+        
+
+        circle_marker_2bd07b0cd8ffad05152bc73ffab33b4c.bindPopup(popup_635559427f45fc3596fd04a0e8b6da7c)
+        ;
+
+        
+    
+    
+            var circle_marker_0b5c43ee67bff788672779bd7626d83c = L.circleMarker(
+                [50.10174999977533, 8.542516999704608],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_6c6eab5976549a7b78ee6dae6b18438d);
+        
+    
+        var popup_7b2a0596b9954bc2d7e973e768ce0d2d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e58dbffa62adee75068646234672048a = $(`<div id="html_e58dbffa62adee75068646234672048a" style="width: 100.0%; height: 100.0%;">Ort: Frankfurt-Höchst<br>pm25: 5.26 µg/m³<br></div>`)[0];
+                popup_7b2a0596b9954bc2d7e973e768ce0d2d.setContent(html_e58dbffa62adee75068646234672048a);
+            
+        
+
+        circle_marker_0b5c43ee67bff788672779bd7626d83c.bindPopup(popup_7b2a0596b9954bc2d7e973e768ce0d2d)
+        ;
+
+        
+    
+    
+            var circle_marker_4a1de6d7bebfe74184f699d1c0670934 = L.circleMarker(
+                [50.07546399990015, 8.57630500010954],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_6c6eab5976549a7b78ee6dae6b18438d);
+        
+    
+        var popup_ea05e7608175f5ce76008e7f83c6a5df = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_04b5e950010a134c2d7225f9e0ff72a7 = $(`<div id="html_04b5e950010a134c2d7225f9e0ff72a7" style="width: 100.0%; height: 100.0%;">Ort: Frankfurt-Schwanheim<br>pm10: 7.69 µg/m³<br></div>`)[0];
+                popup_ea05e7608175f5ce76008e7f83c6a5df.setContent(html_04b5e950010a134c2d7225f9e0ff72a7);
+            
+        
+
+        circle_marker_4a1de6d7bebfe74184f699d1c0670934.bindPopup(popup_ea05e7608175f5ce76008e7f83c6a5df)
+        ;
+
+        
+    
+    
+            var circle_marker_11deeb52e67bb2dcda3749335c69623c = L.circleMarker(
+                [50.07546399990015, 8.57630500010954],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_6c6eab5976549a7b78ee6dae6b18438d);
+        
+    
+        var popup_3a047c50018acb080cf1473abb8066ae = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a651487f20aeaa9b7c7174d445589e5c = $(`<div id="html_a651487f20aeaa9b7c7174d445589e5c" style="width: 100.0%; height: 100.0%;">Ort: Frankfurt-Schwanheim<br>pm25: 4.47 µg/m³<br></div>`)[0];
+                popup_3a047c50018acb080cf1473abb8066ae.setContent(html_a651487f20aeaa9b7c7174d445589e5c);
+            
+        
+
+        circle_marker_11deeb52e67bb2dcda3749335c69623c.bindPopup(popup_3a047c50018acb080cf1473abb8066ae)
+        ;
+
+        
+    
+    
+            var circle_marker_4c695c3110218172e28a69cf37dd5077 = L.circleMarker(
+                [50.13577000007054, 8.921570000210695],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_6c6eab5976549a7b78ee6dae6b18438d);
+        
+    
+        var popup_f375c06826c2903f60a09457e4176a6b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_28a71aaa36972dc736defd47a18bbaec = $(`<div id="html_28a71aaa36972dc736defd47a18bbaec" style="width: 100.0%; height: 100.0%;">Ort: Hanau<br>pm10: 7.66 µg/m³<br></div>`)[0];
+                popup_f375c06826c2903f60a09457e4176a6b.setContent(html_28a71aaa36972dc736defd47a18bbaec);
+            
+        
+
+        circle_marker_4c695c3110218172e28a69cf37dd5077.bindPopup(popup_f375c06826c2903f60a09457e4176a6b)
+        ;
+
+        
+    
+    
+            var circle_marker_7fa8c24cf151eedf5da9df2a1410cc95 = L.circleMarker(
+                [50.13577000007054, 8.921570000210695],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_6c6eab5976549a7b78ee6dae6b18438d);
+        
+    
+        var popup_9b068f346455463bb4e35c92e33b8211 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0dfe4760532fca8c7789d8748b5025e1 = $(`<div id="html_0dfe4760532fca8c7789d8748b5025e1" style="width: 100.0%; height: 100.0%;">Ort: Hanau<br>pm25: 4.93 µg/m³<br></div>`)[0];
+                popup_9b068f346455463bb4e35c92e33b8211.setContent(html_0dfe4760532fca8c7789d8748b5025e1);
+            
+        
+
+        circle_marker_7fa8c24cf151eedf5da9df2a1410cc95.bindPopup(popup_9b068f346455463bb4e35c92e33b8211)
+        ;
+
+        
+    
+    
+            var circle_marker_b4cec08cef33678c89ae2c56b132f981 = L.circleMarker(
+                [50.226631, 8.5643869],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_6c6eab5976549a7b78ee6dae6b18438d);
+        
+    
+        var popup_f97d161e6d4aedb1f2cdaab4e2a38614 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_68bb216cb8ddecd76c122800b4d17049 = $(`<div id="html_68bb216cb8ddecd76c122800b4d17049" style="width: 100.0%; height: 100.0%;">Ort: Hauptstraße Oberstedten<br>pm10: 5.76 µg/m³<br></div>`)[0];
+                popup_f97d161e6d4aedb1f2cdaab4e2a38614.setContent(html_68bb216cb8ddecd76c122800b4d17049);
+            
+        
+
+        circle_marker_b4cec08cef33678c89ae2c56b132f981.bindPopup(popup_f97d161e6d4aedb1f2cdaab4e2a38614)
+        ;
+
+        
+    
+    
+            var circle_marker_1c0bb1010daf37728c3268f1527d7f15 = L.circleMarker(
+                [50.226631, 8.5643869],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_6c6eab5976549a7b78ee6dae6b18438d);
+        
+    
+        var popup_2057e3b19229c51497d94c7a07ce3821 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7760a56ee7cc489247cf0b369c3c3d2b = $(`<div id="html_7760a56ee7cc489247cf0b369c3c3d2b" style="width: 100.0%; height: 100.0%;">Ort: Hauptstraße Oberstedten<br>pm25: 5.62 µg/m³<br></div>`)[0];
+                popup_2057e3b19229c51497d94c7a07ce3821.setContent(html_7760a56ee7cc489247cf0b369c3c3d2b);
+            
+        
+
+        circle_marker_1c0bb1010daf37728c3268f1527d7f15.bindPopup(popup_2057e3b19229c51497d94c7a07ce3821)
+        ;
+
+        
+    
+    
+            var circle_marker_72310ea92f1f586391355a312c7e5339 = L.circleMarker(
+                [50.2219409999925, 8.446079000181808],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_6c6eab5976549a7b78ee6dae6b18438d);
+        
+    
+        var popup_4e7e2a0a59669549beef4db77dabbdd4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_27766d67c2a5e799ad465e70af290d80 = $(`<div id="html_27766d67c2a5e799ad465e70af290d80" style="width: 100.0%; height: 100.0%;">Ort: Kleiner Feldberg<br>pm10: 6.19 µg/m³<br></div>`)[0];
+                popup_4e7e2a0a59669549beef4db77dabbdd4.setContent(html_27766d67c2a5e799ad465e70af290d80);
+            
+        
+
+        circle_marker_72310ea92f1f586391355a312c7e5339.bindPopup(popup_4e7e2a0a59669549beef4db77dabbdd4)
+        ;
+
+        
+    
+    
+            var circle_marker_0480d44e999e722fd837bb1d3b148323 = L.circleMarker(
+                [50.2219409999925, 8.446079000181808],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_6c6eab5976549a7b78ee6dae6b18438d);
+        
+    
+        var popup_04310562c8e9aab8d1f3e5be2b99205f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c3d2027fd6f3f73d99a7231691192b39 = $(`<div id="html_c3d2027fd6f3f73d99a7231691192b39" style="width: 100.0%; height: 100.0%;">Ort: Kleiner Feldberg<br>pm25: 4.87 µg/m³<br></div>`)[0];
+                popup_04310562c8e9aab8d1f3e5be2b99205f.setContent(html_c3d2027fd6f3f73d99a7231691192b39);
+            
+        
+
+        circle_marker_0480d44e999e722fd837bb1d3b148323.bindPopup(popup_04310562c8e9aab8d1f3e5be2b99205f)
+        ;
+
+        
+    
+    
+            var circle_marker_15c8419935263d5f2639a648eede9dba = L.circleMarker(
+                [50.101494000183585, 8.78489199987511],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_6c6eab5976549a7b78ee6dae6b18438d);
+        
+    
+        var popup_f72bff284f0fb20a1e1cbe62195144a5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f3cf2f9cb1ede26f59f42f9f708e87c3 = $(`<div id="html_f3cf2f9cb1ede26f59f42f9f708e87c3" style="width: 100.0%; height: 100.0%;">Ort: Offenbach Untere Grenzstraße<br>pm10: 8.52 µg/m³<br></div>`)[0];
+                popup_f72bff284f0fb20a1e1cbe62195144a5.setContent(html_f3cf2f9cb1ede26f59f42f9f708e87c3);
+            
+        
+
+        circle_marker_15c8419935263d5f2639a648eede9dba.bindPopup(popup_f72bff284f0fb20a1e1cbe62195144a5)
+        ;
+
+        
+    
+    
+            var circle_marker_2a448ef51a68de86fb77eb3364929478 = L.circleMarker(
+                [50.101494000183585, 8.78489199987511],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_6c6eab5976549a7b78ee6dae6b18438d);
+        
+    
+        var popup_56678477ad82b111b8d3db40d95c26f7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5520be17d849c5b9cc76e8566545b79d = $(`<div id="html_5520be17d849c5b9cc76e8566545b79d" style="width: 100.0%; height: 100.0%;">Ort: Offenbach Untere Grenzstraße<br>pm25: 5.48 µg/m³<br></div>`)[0];
+                popup_56678477ad82b111b8d3db40d95c26f7.setContent(html_5520be17d849c5b9cc76e8566545b79d);
+            
+        
+
+        circle_marker_2a448ef51a68de86fb77eb3364929478.bindPopup(popup_56678477ad82b111b8d3db40d95c26f7)
+        ;
+
+        
+    
+    
+            var circle_marker_f28a84203ca7ab1281e99b7071e44fe7 = L.circleMarker(
+                [50.01032500012303, 8.451527000308992],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_6c6eab5976549a7b78ee6dae6b18438d);
+        
+    
+        var popup_8c1020cf5a5382bd0765b9fb321fcc56 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ddd9d624a883da78084c18611ee9c264 = $(`<div id="html_ddd9d624a883da78084c18611ee9c264" style="width: 100.0%; height: 100.0%;">Ort: Raunheim<br>pm10: 7.90 µg/m³<br></div>`)[0];
+                popup_8c1020cf5a5382bd0765b9fb321fcc56.setContent(html_ddd9d624a883da78084c18611ee9c264);
+            
+        
+
+        circle_marker_f28a84203ca7ab1281e99b7071e44fe7.bindPopup(popup_8c1020cf5a5382bd0765b9fb321fcc56)
+        ;
+
+        
+    
+    
+            var circle_marker_58c6193fb992c63663dc1e0c4b1543f0 = L.circleMarker(
+                [50.01032500012303, 8.451527000308992],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_6c6eab5976549a7b78ee6dae6b18438d);
+        
+    
+        var popup_b56309477c78551d53bbd76eda818ee1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_829c589d780ed31da6479a31db1419cc = $(`<div id="html_829c589d780ed31da6479a31db1419cc" style="width: 100.0%; height: 100.0%;">Ort: Raunheim<br>pm25: 4.90 µg/m³<br></div>`)[0];
+                popup_b56309477c78551d53bbd76eda818ee1.setContent(html_829c589d780ed31da6479a31db1419cc);
+            
+        
+
+        circle_marker_58c6193fb992c63663dc1e0c4b1543f0.bindPopup(popup_b56309477c78551d53bbd76eda818ee1)
+        ;
+
+        
+    
+</script>
+</html>
