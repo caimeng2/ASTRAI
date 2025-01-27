@@ -48,8 +48,6 @@ They can be anything (within the scope of this course) that you find interesting
 
 **Tools**: VS Code, Google Colab, JupyterHub.
 
-**Sign up for YOU-lead [here](https://docs.google.com/spreadsheets/d/1esQtwJurQ6PXKDdeY0r3jsSK4SU1G4MgjCqUpfYVKSY/edit?gid=0#gid=0)** by Nov 14.
-
 ## Schedule
 
 The schedule and topics may change based on class progress and interests.
@@ -78,7 +76,7 @@ Week 11 (Jan 15, 2025): Digital twins (Pardis)
 
 Week 12 (Jan 22, 2025): Spatial analysis (Theresa), `plotly` (Ali)
 
-Week 13 (Jan 29, 2025): PowerBI
+Week 13 (Jan 29, 2025): Power BI
 
 Week 14 (Feb 5, 2025): Pearson correlation (Nicole), PTV Visum (Thorben)
 
